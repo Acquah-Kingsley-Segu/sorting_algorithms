@@ -1,9 +1,16 @@
 #include "sort.h"
 
+/**
+ * bubble_sort - Implements bubble sort algorithm
+ *
+ * @array: array to sort
+ * @size: size of the array
+ */
+
 void bubble_sort(int *array, size_t size)
 {
 	int temp, swap = 0;
-	long unsigned int inner, outer;
+	unsigned long int inner, outer;
 
 	for (outer = 0; outer < size; outer++)
 	{

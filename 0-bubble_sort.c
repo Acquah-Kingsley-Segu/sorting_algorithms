@@ -1,5 +1,5 @@
 #include "sort.h"
-
+#include <stdlib.h>
 /**
  * bubble_sort - Implements bubble sort algorithm
  *
@@ -12,7 +12,7 @@ void bubble_sort(int *array, size_t size)
 	int temp, swap = 0;
 	unsigned long int inner, outer;
 
-	if (size <= 1)
+	if (array == NULL)
 		return;
 	for (outer = 0; outer < size; outer++)
 	{
